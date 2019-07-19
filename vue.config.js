@@ -1,4 +1,7 @@
 // vue.config.js
 module.exports = {
-  outputDir : 'docs'
+  outputDir : 'docs',
+  publicPath: process.env.NODE_ENV === 'production'
+    ? '/colegio-anglo-front/'
+    : '/'
 }
