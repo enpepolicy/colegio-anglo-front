@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <h1>Hello butches</h1>
+    <h1>Hello butches 2</h1>
   </v-app>
 </template>
 
