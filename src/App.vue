@@ -27,10 +27,8 @@ export default {
 <style lang="css" >
 #app{
   background-image: url('~@/assets/punticos2.svg');
-  background-repeat: no-repeat;
-  background-size: 50%;
 
-  
+
   background-color: white;
   font-family: 'Nunito Sans', sans-serif;
   font-family: 'Nunito', sans-serif;
