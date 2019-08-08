@@ -1,5 +1,5 @@
 <template>
-  <v-layout id="caja" column>
+  <v-layout id="caja" column :style="{backgroundImage: `url(${headerImage})` }" >
 
     <v-layout justify-space-between row wrap ma-5>
       <v-layout justify-center md4 xs12 mb-5>
@@ -13,19 +13,19 @@
       </v-layout>
       <v-flex md8 xs12>
         <v-tabs color="transparent" show-arrows dark grow right slider-color="white">
-          <v-tab v-on:click="menu = 'Bienvenido'" to="/" >
+          <v-tab to="/" >
             Inicio
           </v-tab>
-          <v-tab v-on:click="menu = '¿Quieres conocernos?'" to="/admisiones">
+          <v-tab to="/admisiones">
             Admisiones
           </v-tab>
-          <v-tab v-on:click="menu = 'Cursos de punta para tus hijos'" to="/cursos">
+          <v-tab to="/cursos">
             Cursos
           </v-tab>
-          <v-tab v-on:click="menu = '¿Cómo nos organizamos?'" to="/departamentos">
+          <v-tab to="/departamentos">
             Departamentos
           </v-tab>
-          <v-tab v-on:click="menu = 'Nos preparamos para los examenes SABER'" to = "/icfes">
+          <v-tab to = "/icfes">
             Icfes
           </v-tab>
         </v-tabs>
@@ -33,7 +33,7 @@
     </v-layout>
     <v-layout align-center justify-space-around >
       <v-flex xs8>
-        <h1 id="titulo">{{menu}}</h1>
+        <h1 id="titulo">{{ title }}</h1>
       </v-flex>
     </v-layout>
     <v-layout align-end justify-center row  mb-4>
@@ -45,13 +45,22 @@
 </template>
 
 <script>
+import { mapState, mapMutations } from 'vuex'
+
 export default {
   data: function(){
     return {
-      menu: "Colegio Colombo Americano"
+      menu: "Colegio Anglos Americano",
+      tituloPrincipal: '',
+      imagenHeader: '',
+      hola: require("@/assets/fotoHeaderHomeOsc.jpg")
     }
   },
-  methods:{
+  computed: {
+    ...mapState([
+      'title',
+      'headerImage'
+    ])
   }
 }
 </script>
@@ -71,7 +80,7 @@ h1{
 }
 #caja{
   height: 100vh;
-  background-image: url('~@/assets/fotoHeaderHomeOsc.jpg');
+  /* background-image: url('~@/assets/fotoHeaderHomeOsc.jpg'); */
   background-size: cover;
 }
 a{

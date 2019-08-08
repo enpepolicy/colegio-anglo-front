@@ -1,8 +1,14 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-/*Componentes*/
-import home from './components/home'
-import ERR404 from './components/ERR404'
+
+//Pages
+import Admisiones from './components/pages/Admisiones'
+import Cursos from './components/pages/Cursos'
+import Departamentos from './components/pages/Departamentos'
+import Icfes from './components/pages/Icfes'
+import Inicio from './components/pages/Inicio'
+import Organizacion from './components/pages/Organizacion'
+import ERR404 from './components/pages/ERR404'
 
 Vue.use(Router)
 
@@ -10,8 +16,33 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'home',
-      component: home
+      name: 'Inicio',
+      component: Inicio
+    },
+    {
+      path: '/cursos',
+      name: 'Cursos',
+      component: Cursos
+    },
+    {
+      path: '/Departamentos',
+      name: 'Departamentos',
+      component: Departamentos
+    },
+    {
+      path: '/Icfes',
+      name: 'Icfes',
+      component: Icfes
+    },
+    {
+      path: '/Organizacion',
+      name: 'Organizacion',
+      component: Organizacion
+    },
+    {
+      path: '/Admisiones',
+      name: 'Admisiones',
+      component: Admisiones
     },
     {
       path: '*',

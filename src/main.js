@@ -1,11 +1,11 @@
 import Vue from 'vue'
 import App from './App.vue'
 import router from './routes'
+import store from './store'
 import Vuetify from 'vuetify'
 import 'vuetify/dist/vuetify.min.css' // Ensure you are using css-loader
 import VueScrollProgress from 'vue-scroll-progress'
 import VueScrollTo from 'vue-scrollto'
-
 
 Vue.use(Vuetify, {
   iconfont: 'md' // 'md' || 'mdi' || 'fa' || 'fa4'
@@ -28,5 +28,6 @@ Vue.use(VueScrollTo, {
 
 new Vue({
   render: h => h(App),
-  router
+  router,
+  store
 }).$mount('#app')

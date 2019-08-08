@@ -1,16 +1,16 @@
 <template>
   <v-app>
     <VueScrollProgress></VueScrollProgress>
-    <Header></Header>
+    <Header/>
 
-    <router-view id='vista'>
+    <router-view >
     </router-view>
 
   </v-app>
 </template>
 
 <script>
-import Header from "./components/header"
+import Header from "./components/Header"
 
 export default {
   name: 'App',
