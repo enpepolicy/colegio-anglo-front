@@ -1,7 +1,6 @@
 <template lang="html">
   <v-layout justify-center column>
     <h1 id='vista'></h1>
-    <hr>
     <div class="" v-for='hola in elementosBody' >
       <h1>{{hola.content.title}}</h1>
       <p>{{hola.content.content}}</p>

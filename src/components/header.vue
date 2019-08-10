@@ -45,15 +45,14 @@
 </template>
 
 <script>
-import { mapState, mapMutations } from 'vuex'
+import { mapState } from 'vuex'
 
 export default {
   data: function(){
     return {
       menu: "Colegio Anglos Americano",
       tituloPrincipal: '',
-      imagenHeader: '',
-      hola: require("@/assets/fotoHeaderHomeOsc.jpg")
+      imagenHeader: ''
     }
   },
   computed: {

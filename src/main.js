@@ -6,6 +6,7 @@ import Vuetify from 'vuetify'
 import 'vuetify/dist/vuetify.min.css' // Ensure you are using css-loader
 import VueScrollProgress from 'vue-scroll-progress'
 import VueScrollTo from 'vue-scrollto'
+import VueYoutube from 'vue-youtube'
 
 Vue.use(Vuetify, {
   iconfont: 'md' // 'md' || 'mdi' || 'fa' || 'fa4'
@@ -24,7 +25,8 @@ Vue.use(VueScrollTo, {
  onCancel: false,
  x: false,
  y: true
- })
+})
+Vue.use(VueYoutube)
 
 new Vue({
   render: h => h(App),

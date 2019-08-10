@@ -5,7 +5,7 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-    title: 'hola bitches',
+    title: 'Colegio Anglo Americano',
     headerImage: require("@/assets/fotoHeaderHomeOsc.jpg")
   },
   mutations: {

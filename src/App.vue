@@ -1,21 +1,28 @@
 <template>
   <v-app>
-    <VueScrollProgress></VueScrollProgress>
+    <VueScrollProgress/>
     <Header/>
 
-    <router-view >
-    </router-view>
+    <v-container id='content'>
+      <router-view/>
+    </v-container>
+    <v-container >
+      <Footer/>
+    </v-container>
 
   </v-app>
 </template>
 
 <script>
 import Header from "./components/Header"
+import Footer from "./components/Footer"
+
 
 export default {
   name: 'App',
   components: {
-    Header
+    Header,
+    Footer
   },
   data () {
     return {
@@ -25,13 +32,15 @@ export default {
 }
 </script>
 <style lang="css" >
+#content{
+  padding: 0
+}
 #app{
-  background-image: url('~@/assets/punticos2.svg');
-
-
-  background-color: white;
   font-family: 'Nunito Sans', sans-serif;
   font-family: 'Nunito', sans-serif;
+  background-image: url('~@/assets/fondo.svg');
+  background-color: white;
+  background-size: 60em;
 }
 #progress-container-el {
   /* background */
@@ -41,5 +50,8 @@ export default {
 #progress-el {
   /* progress bar */
   background-color:#a1091f !important;
+}
+p{
+  font-size: 1.5em
 }
 </style>

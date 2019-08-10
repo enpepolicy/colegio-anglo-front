@@ -2,12 +2,13 @@ import Vue from 'vue'
 import Router from 'vue-router'
 
 //Pages
+import Inicio from './components/pages/Inicio'
 import Admisiones from './components/pages/Admisiones'
 import Cursos from './components/pages/Cursos'
 import Departamentos from './components/pages/Departamentos'
 import Icfes from './components/pages/Icfes'
-import Inicio from './components/pages/Inicio'
 import Organizacion from './components/pages/Organizacion'
+import Pagos from './components/pages/Pagos'
 import ERR404 from './components/pages/ERR404'
 
 Vue.use(Router)
@@ -18,6 +19,11 @@ export default new Router({
       path: '/',
       name: 'Inicio',
       component: Inicio
+    },
+    {
+      path: '/Admisiones',
+      name: 'Admisiones',
+      component: Admisiones
     },
     {
       path: '/cursos',
@@ -40,9 +46,9 @@ export default new Router({
       component: Organizacion
     },
     {
-      path: '/Admisiones',
-      name: 'Admisiones',
-      component: Admisiones
+      path: '/Pagos',
+      name: 'Pagos',
+      component: Pagos
     },
     {
       path: '*',
