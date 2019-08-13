@@ -5,7 +5,7 @@
         <v-flex
         my-4
         md5
-        xl3
+        xl5
         v-for="(level, i) in levels"
         :key="i">
           <v-card
@@ -36,7 +36,7 @@
       <v-layout wrap justify-space-around align-center >
         <v-flex
         xs12
-        my-3>
+        my-5>
           <h1>Lo que ofrecemos a <span class="title_bold">nuestra comunidad</span></h1>
         </v-flex>
         <v-flex
@@ -48,11 +48,30 @@
           :href="card.content.url.url"
           flat
           color="transparent">
-            <v-img
+
+          <v-layout align-center fill-height justify-start mx-3>
+              <v-img
               v-bind:src="card.content.icon"
-            >
-            </v-img>
-            <v-card-title>{{card.content.title}}</v-card-title>
+              height="3em"
+              max-width="3em"
+              contain
+              />
+
+
+            <v-card-title>
+              {{card.content.title}}
+            </v-card-title>
+          </v-layout>
+
+            <!-- <v-layout justify-space-between align-left>
+              <v-img
+              v-bind:src="card.content.icon"
+              max-height="1.5em"
+              contain
+              />
+              {{card.content.title}}
+            </v-layout> -->
+
             <v-card-text>{{card.content.description}}</v-card-text>
           </v-card>
         </v-flex>
@@ -140,7 +159,6 @@ h1{
   color: #333366;
   font-weight: 800;
   font-size: 2em;
-  padding-bottom: 0;
 }
 .v-card__text{
   font-size: 20px,

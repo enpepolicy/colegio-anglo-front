@@ -6,6 +6,8 @@
           <v-img
             min-width="140px"
             max-width="250px"
+            max-height="250px"
+
             :src="require('../assets/logo.svg')"
             alt="Logo Colegio Anglo Americano"
             contain
@@ -78,7 +80,7 @@ h1{
 
 }
 #caja{
-  height: 100vh;
+  height: 100%;
   /* background-image: url('~@/assets/fotoHeaderHomeOsc.jpg'); */
   background-size: cover;
 }
