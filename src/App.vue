@@ -48,15 +48,6 @@ export default {
   background-color: white;
   background-size: 60em;
 }
-#progress-container-el {
-  /* background */
-  background-color: transparent !important;
-  bottom: calc(100% - 4px) !important;
-}
-#progress-el {
-  /* progress bar */
-  background-color:#a1091f !important;
-}
 p{
   font-size: 1.5em
 }

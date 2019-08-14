@@ -2,12 +2,35 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
+
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="author" content="Enrique Peña">
+    <meta name="description" content="Portal web del Colegio Anglo Americano">
+    <meta name="keywords" content="colegio, ingles, bilingue, icfes, americano, bogota">
+
+    <meta property="og:title" content="Colegio Anglo Americano">
+    <meta property="og:site_name" content="Colegio Anglo Americano">
+    <meta property="og:description" content="Portal web del Colegio Anglo Americano">
+    <meta property="og:image" content="<%= BASE_URL %>logo_fondo_gris.svg">
+    <meta property="og:type" content="website" />
+
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-145671199-1"></script>
+    <script>
+      window.GA_TRACKING_ID = 'UA-145671199-1'; //Agregado para ser usado globalmente
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-145671199-1', { send_page_view: false });
+    </script>
+
     <link href='https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900|Material+Icons' rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Nunito|Nunito+Sans&display=swap" rel="stylesheet">
-    <title>Web de Colegio Anglo Americano</title>
+    <title>Colegio Anglo Americano</title>
   </head>
   <body>
     <noscript>

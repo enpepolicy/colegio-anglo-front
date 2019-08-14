@@ -10,7 +10,7 @@
         :key="i">
           <v-card
           flat
-          color="transparent"
+          color="#ffffff"
           >
             <v-img
               class="white--text"
@@ -47,7 +47,7 @@
           <v-card
           :href="card.content.url.url"
           flat
-          color="transparent">
+          color="#ffffff">
 
           <v-layout align-center fill-height justify-start mx-3>
             <v-img

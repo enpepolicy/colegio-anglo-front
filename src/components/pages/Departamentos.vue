@@ -25,7 +25,7 @@
           <v-card
           flat
           v-else
-          color="transparent"
+          color="#ffffff"
           >
             <v-img
               class="white--text"

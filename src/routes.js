@@ -4,7 +4,6 @@ import Router from 'vue-router'
 //Pages
 import Inicio from './components/pages/Inicio'
 import Admisiones from './components/pages/Admisiones'
-import Cursos from './components/pages/Cursos'
 import Departamentos from './components/pages/Departamentos'
 import Icfes from './components/pages/Icfes'
 import Organizacion from './components/pages/Organizacion'
@@ -24,11 +23,6 @@ export default new Router({
       path: '/Admisiones',
       name: 'Admisiones',
       component: Admisiones
-    },
-    {
-      path: '/cursos',
-      name: 'Cursos',
-      component: Cursos
     },
     {
       path: '/Departamentos',

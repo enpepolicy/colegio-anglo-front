@@ -21,8 +21,8 @@
           <v-tab to="/admisiones">
             Admisiones
           </v-tab>
-          <v-tab to="/cursos">
-            Cursos
+          <v-tab to="/organizacion">
+            Organización
           </v-tab>
           <v-tab to="/departamentos">
             Departamentos
