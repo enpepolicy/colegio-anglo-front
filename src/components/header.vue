@@ -30,6 +30,9 @@
           <v-tab to = "/icfes">
             Icfes
           </v-tab>
+          <v-tab to = "/pagos">
+            Pagos
+          </v-tab>
         </v-tabs>
       </v-flex>
     </v-layout>
