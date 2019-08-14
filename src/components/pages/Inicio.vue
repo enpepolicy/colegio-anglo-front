@@ -50,27 +50,16 @@
           color="transparent">
 
           <v-layout align-center fill-height justify-start mx-3>
-              <v-img
-              v-bind:src="card.content.icon"
-              height="3em"
-              max-width="3em"
-              contain
-              />
-
-
+            <v-img
+            v-bind:src="card.content.icon"
+            height="3em"
+            max-width="3em"
+            contain
+            />
             <v-card-title>
               {{card.content.title}}
             </v-card-title>
           </v-layout>
-
-            <!-- <v-layout justify-space-between align-left>
-              <v-img
-              v-bind:src="card.content.icon"
-              max-height="1.5em"
-              contain
-              />
-              {{card.content.title}}
-            </v-layout> -->
 
             <v-card-text>{{card.content.description}}</v-card-text>
           </v-card>

@@ -5,8 +5,8 @@
       <v-layout justify-center md4 xs12 mb-5>
           <v-img
             min-width="140px"
-            max-width="250px"
-            max-height="250px"
+            max-width="200px"
+            max-height="200px"
 
             :src="require('../assets/logo.svg')"
             alt="Logo Colegio Anglo Americano"
