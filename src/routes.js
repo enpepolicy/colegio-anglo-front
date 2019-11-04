@@ -49,8 +49,8 @@ export default new Router({
       component: ERR404
     }
   ],
-  // Define ruta base de pruebas (cambiar junto a publicPath en el vue config)
-  base: "/colegio-anglo-front/",
+  // Define ruta base de github (cambiar junto a publicPath en el vue config)
+  // base: "/colegio-anglo-front/",
   /*Hace que las rutas aparezcan sin #*/
   mode: 'history'
 })
