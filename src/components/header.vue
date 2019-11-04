@@ -83,7 +83,7 @@ h1{
 
 }
 #caja{
-  height: 100%;
+  height: 100vh;
   /* background-image: url('~@/assets/fotoHeaderHomeOsc.jpg'); */
   background-size: cover;
 }
