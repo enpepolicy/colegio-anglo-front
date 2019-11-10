@@ -63,7 +63,9 @@ export default {
     return {
       payload: {
         title: '',
-        img: ''
+        img: '',
+        description: '',
+        descriptionColor: ''
       },
       botonTexto: '',
       botonUrl: '',
@@ -83,6 +85,8 @@ export default {
     .then((response) => {
       this.payload.title = response.data.stories[0].content.title;
       this.payload.img = response.data.stories[0].content.image;
+      this.payload.description = response.data.stories[0].content.description;
+      this.payload.descriptionColor = response.data.stories[0].content.descriptionColor;
 
       this.botonTexto = response.data.stories[1].content.title;
       this.botonUrl = response.data.stories[1].content.url.url;
@@ -96,7 +100,7 @@ export default {
       // console.log(this.cards);
     })
     .catch((error) => {
-      console.log(error);
+      // console.log(error);
     })
   }
 }

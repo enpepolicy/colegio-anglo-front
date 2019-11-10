@@ -1,7 +1,13 @@
 <template>
-  <v-layout id="caja" column :style="{backgroundImage: `url(${headerImage})` }" >
+  <v-layout
+  id="caja"
+  column
+  :style="`
+  background: linear-gradient(to bottom, rgba(12,22,66,0.75) , rgba(12,22,66,0.75)), url(${headerImage});
+  `"
+  class="imagenHeader">
 
-    <v-layout justify-space-between row wrap ma-5>
+    <v-layout justify-space-between row wrap mx-5 mt-5>
       <v-layout justify-center md4 xs12 mb-5>
           <v-img
             min-width="140px"
@@ -41,6 +47,17 @@
         <h1 id="titulo">{{ title }}</h1>
       </v-flex>
     </v-layout>
+    <v-layout align-center justify-space-around >
+      <v-flex xs8 sm6>
+        <h3
+        class="tituloTexto"
+        :style="`
+          color:${descriptionColor} !important
+        `">
+          {{ description }}
+        </h3>
+      </v-flex>
+    </v-layout>
     <v-layout align-end justify-center row  mb-4>
       <v-btn fab outline dark id="btnFlecha" v-scroll-to="'#vista'">
         <v-icon >expand_more</v-icon>
@@ -55,15 +72,14 @@ import { mapState } from 'vuex'
 export default {
   data: function(){
     return {
-      menu: "Colegio Anglos Americano",
-      tituloPrincipal: '',
-      imagenHeader: ''
     }
   },
   computed: {
     ...mapState([
       'title',
-      'headerImage'
+      'headerImage',
+      'description',
+      'descriptionColor'
     ])
   }
 }
@@ -72,10 +88,29 @@ export default {
 <style lang="css" scoped>
 #titulo{
   text-align: center;
+  font-weight:600
 }
+
+@media only screen and (min-width : 961px){
+  h1{
+    font-size: 8vh
+  }
+  .tituloTexto{
+    font-size: 2.7em !important
+
+  }
+}
+@media only screen and (max-width : 960px){
+  h1{
+    font-size: 4vh
+  }
+  .tituloTexto{
+    font-size: 1.2em !important
+  }
+}
+
 h1{
   color: white;
-  font-size: 6vh;
   font-family: 'Nunito';
   font-weight: 100;
 }
@@ -85,10 +120,19 @@ h1{
 #caja{
   height: 100vh;
   /* background-image: url('~@/assets/fotoHeaderHomeOsc.jpg'); */
-  background-size: cover;
+  /* background-size: cover; */
 }
 a{
   color: grey;
   text-decoration: none !important
+}
+.imagenHeader{
+  background-size:cover !important
+}
+.tituloTexto{
+  font-weight: 200;
+  color: white !important;
+  font-size: 1.5em
+
 }
 </style>

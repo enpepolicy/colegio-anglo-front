@@ -12,6 +12,8 @@
     "chalk": "^2.4.2",
     "core-js": "^2.6.5",
     "css-loader": "^3.1.0",
+    "node-sass": "^4.13.0",
+    "sass-loader": "^8.0.0",
     "storyblok-js-client": "^2.0.0",
     "vue": "^2.6.10",
     "vue-100vh": "^0.1.1",

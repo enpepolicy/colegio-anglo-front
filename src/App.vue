@@ -1,6 +1,5 @@
 <template>
   <v-app>
-    <VueScrollProgress/>
 
     <vue100vh :css="{height: '100rvh'}">
       <Header/>
@@ -37,7 +36,7 @@ export default {
   }
 }
 </script>
-<style lang="css" >
+<style lang="scss" >
 #content{
   padding: 0
 }
@@ -50,5 +49,16 @@ export default {
 }
 p{
   font-size: 1.5em
+}
+// .v-card > .v-image:hover{
+//   transform: scale(1.08);
+//   transition: transform .25s, visibility .25s ease-in;
+// }
+.v-card:hover{
+  transform: scale(1.07);
+  .v-image{
+    transform: scale(1.03);
+    transition: transform .25s, visibility .25s ease-in-out;
+  }
 }
 </style>

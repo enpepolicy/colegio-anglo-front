@@ -53,7 +53,9 @@ export default {
     return {
       payload: {
         title: '',
-        img: ''
+        img: '',
+        description: '',
+        descriptionColor: ''
       },
       infos: []
     }
@@ -71,6 +73,8 @@ export default {
     .then((response) => {
       this.payload.title = response.data.stories[0].content.title;
       this.payload.img = response.data.stories[0].content.image;
+      this.payload.description = response.data.stories[0].content.description;
+      this.payload.descriptionColor = response.data.stories[0].content.descriptionColor;
 
       for (var i = 1; i < response.data.stories.length; i++){
         if(response.data.stories[i].content.tag == 'info'){
