@@ -96,7 +96,7 @@ export default {
     font-size: 8vh
   }
   .tituloTexto{
-    font-size: 2.7em !important
+    font-size: 2em !important
 
   }
 }
