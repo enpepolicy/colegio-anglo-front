@@ -4,5 +4,5 @@ module.exports = {
   //   ? '/colegio-anglo-front/'
   //   : '/',
   // outputDir : 'docs'
-  publicPath: ''
+  publicPath: 'new'
 }

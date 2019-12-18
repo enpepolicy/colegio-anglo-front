@@ -50,7 +50,7 @@ export default new Router({
     }
   ],
   // Define ruta base de github (cambiar junto a publicPath en el vue config)
-  // base: "/colegio-anglo-front/",
+  base: "/new/",
   /*Hace que las rutas aparezcan sin #*/
   mode: 'history'
 })
